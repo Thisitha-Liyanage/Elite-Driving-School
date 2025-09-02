@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="loginAnc" prefHeight="400" prefWidth="700" style="-fx-background-color: linear-gradient(to right, #6A11CB, #2575FC);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.orm_final_project.Controllers.LoginController">
+
+    <!-- Centered login box -->
+    <AnchorPane layoutX="150" layoutY="50" prefHeight="300" prefWidth="400" style="-fx-background-color: white; -fx-background-radius: 20; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.5, 0, 0);">
+
+        <!-- Title -->
+        <Label layoutX="118.0" layoutY="14.0" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #333;" text="Welcome Back" />
+
+        <!-- Username Field -->
+        <TextField fx:id="usernameField" layoutX="50" layoutY="70" onAction="#usernameFieldOnAction" prefHeight="35" prefWidth="300" promptText="Username" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #ccc; -fx-padding: 0 0 0 10;" />
+
+        <!-- Email Field -->
+        <TextField fx:id="emailField" layoutX="50" layoutY="120" onAction="#emailFieldOnAction" prefHeight="35" prefWidth="300" promptText="Email" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #ccc; -fx-padding: 0 0 0 10;" />
+
+        <!-- Password Field -->
+        <PasswordField fx:id="passwordField" layoutX="50" layoutY="170" onAction="#passwordFieldOnAction" prefHeight="35" prefWidth="300" promptText="Password" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #ccc; -fx-padding: 0 0 0 10;" />
+
+        <!-- Login Button -->
+        <Button fx:id="loginBtn"
+                layoutX="50"
+                layoutY="230"
+                prefWidth="300"
+                prefHeight="40"
+                style="-fx-background-color: #6A11CB; -fx-text-fill: white; -fx-font-size: 16px; -fx-background-radius: 20;"
+                text="Login"
+                onAction="#loginBtnOnAction" />
+    </AnchorPane>
+
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="deleteStudentanc" prefHeight="500" prefWidth="700" style="-fx-background-color: #2C3E50;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.orm_final_project.Controllers.StudentManageController.DeleteStudentPageController">
+
+    <VBox layoutX="100" layoutY="40" prefWidth="500" spacing="20">
+
+        <!-- Header -->
+        <Label alignment="CENTER" prefWidth="500" style="-fx-font-size: 24px; -fx-text-fill: #ECF0F1; -fx-font-weight: bold;" text="Delete Student" />
+
+        <!-- Student ID -->
+        <HBox spacing="15">
+            <Label prefWidth="150" style="-fx-text-fill: #ECF0F1; -fx-font-size: 14px;" text="Student ID:" />
+            <TextField fx:id="txtStudentId" editable="false" onAction="#findStudentOnAction" prefWidth="300" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 8;" />
+        </HBox>
+
+        <!-- Name -->
+        <HBox spacing="15">
+            <Label prefWidth="150" style="-fx-text-fill: #ECF0F1; -fx-font-size: 14px;" text="Name:" />
+            <TextField fx:id="txtName" editable="false" prefWidth="300" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 8;" />
+        </HBox>
+
+        <!-- Date of Birth -->
+        <HBox spacing="15">
+            <Label prefWidth="150" style="-fx-text-fill: #ECF0F1; -fx-font-size: 14px;" text="Date of Birth:" />
+            <DatePicker fx:id="dobPicker" editable="false" prefWidth="300" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 8;" />
+        </HBox>
+
+        <!-- Contact Number -->
+        <HBox spacing="15">
+            <Label prefWidth="150" style="-fx-text-fill: #ECF0F1; -fx-font-size: 14px;" text="Contact No:" />
+            <TextField fx:id="txtContact" editable="false" prefWidth="300" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 8;" />
+        </HBox>
+
+        <!-- Buttons -->
+        <HBox alignment="CENTER" layoutY="400" spacing="20">
+            <Button fx:id="deleteBtn" onAction="#deleteBtnOnAction" prefHeight="35" prefWidth="100" style="-fx-background-color: #C0392B; -fx-text-fill: white; -fx-background-radius: 12; -fx-font-size: 14px;" text="Delete" />
+            <Button fx:id="resetBtn" onAction="#resetBtnOnAction" prefHeight="35" prefWidth="100" style="-fx-background-color: #7F8C8D; -fx-text-fill: white; -fx-background-radius: 12; -fx-font-size: 14px;" text="Reset" />
+            <Button fx:id="closeBtn" onAction="#closeBtnOnAction" prefHeight="35" prefWidth="100" style="-fx-background-color: #7F8C8D; -fx-text-fill: white; -fx-background-radius: 12; -fx-font-size: 14px;" text="Close" />
+        </HBox>
+
+    </VBox>
+</AnchorPane>

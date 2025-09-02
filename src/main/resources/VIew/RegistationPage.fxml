@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="registrationRoot" prefHeight="700" prefWidth="1100" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #ECF0F1, #BDC3C7);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.orm_final_project.Controllers.RegistrationPageController">
+
+    <!-- Header -->
+    <Label alignment="CENTER" layoutX="0" layoutY="20" prefWidth="1100" style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #2C3E50;" text="Manage Registrations" />
+
+    <!-- Buttons -->
+    <HBox layoutX="420.0" layoutY="122.0" spacing="20">
+        <Button fx:id="saveBtn" onAction="#saveBtnOnAction" prefHeight="40" prefWidth="120" style="-fx-background-color: #27AE60; -fx-text-fill: white; -fx-background-radius: 15; -fx-font-size: 14px;" text="Save" />
+        <Button fx:id="updateBtn" onAction="#updateBtnOnAction" prefHeight="40" prefWidth="120" style="-fx-background-color: #2980B9; -fx-text-fill: white; -fx-background-radius: 15; -fx-font-size: 14px;" text="Update" />
+    </HBox>
+
+    <!-- Table -->
+    <TableView fx:id="registrationTable" layoutX="30.0" layoutY="318.0" prefHeight="362.0" prefWidth="1040" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #ccc; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);">
+        <columns>
+            <TableColumn fx:id="colId" prefWidth="150" text="ID" />
+            <TableColumn fx:id="colAmount" prefWidth="200" text="Amount" />
+            <TableColumn fx:id="colStudentId" prefWidth="200" text="Student ID" />
+            <TableColumn fx:id="colCourseId" prefWidth="200" text="Course ID" />
+            <TableColumn fx:id="colDate" prefWidth="250" text="Date" />
+        </columns>
+    </TableView>
+
+    <AnchorPane fx:id="ManagePageLoader" layoutX="200.0" layoutY="186.0" prefHeight="500.0" prefWidth="700.0" />
+
+</AnchorPane>

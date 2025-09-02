@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane fx:id="paymentRoot" prefHeight="700" prefWidth="1100" style="-fx-background-color: linear-gradient(from 0% 0% to 100% 100%, #ECF0F1, #BDC3C7);" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.orm_final_project.Controllers.PaymentPageController">
+
+    <!-- Header -->
+    <Label alignment="CENTER" layoutX="0" layoutY="20" prefWidth="1100" style="-fx-font-size: 32px; -fx-font-weight: bold; -fx-text-fill: #2C3E50;" text="Manage Payments" />
+
+    <!-- Buttons -->
+    <HBox layoutX="350.0" layoutY="80.0" spacing="20">
+        <Button fx:id="addBtn" onAction="#addBtnOnAction" prefHeight="40" prefWidth="120" style="-fx-background-color: #27AE60; -fx-text-fill: white; -fx-background-radius: 15; -fx-font-size: 14px;" text="Add" />
+        <Button fx:id="updateBtn" onAction="#updateBtnOnAction" prefHeight="40" prefWidth="120" style="-fx-background-color: #2980B9; -fx-text-fill: white; -fx-background-radius: 15; -fx-font-size: 14px;" text="Update" />
+        <Button fx:id="deleteBtn" onAction="#deleteBtnOnAction" prefHeight="40" prefWidth="120" style="-fx-background-color: #C0392B; -fx-text-fill: white; -fx-background-radius: 15; -fx-font-size: 14px;" text="Delete" />
+    </HBox>
+
+    <!-- Table -->
+    <TableView fx:id="paymentTable" layoutX="30" layoutY="140" prefHeight="540" prefWidth="1040" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #ccc; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 0);">
+        <columns>
+            <TableColumn fx:id="colPaymentId" prefWidth="180" text="Payment ID" />
+            <TableColumn fx:id="colEnrollmentId" prefWidth="180" text="Enrollment ID" />
+            <TableColumn fx:id="colDate" prefWidth="180" text="Date" />
+            <TableColumn fx:id="colPaymentType" prefWidth="250" text="Payment Type" />
+            <TableColumn fx:id="colPaymentMethod" prefWidth="250" text="Payment Method" />
+        </columns>
+    </TableView>
+
+</AnchorPane>
