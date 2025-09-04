@@ -15,7 +15,7 @@ public class DAOFactory {
     public <T extends SuperDAO> T getDAO(DAOTypes daoTypes) {
         return switch (daoTypes) {
             case STUDENT -> (T) new StudentDAOIMPL();
-            case COURSE -> null;
+            case COURSE -> (T) new CourseDAOIMPL();
             case INSTRUCTOR -> null;
             case ENROLLMENT -> null;
             case COURSE_INSTRUCTOR -> null;

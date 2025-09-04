@@ -2,6 +2,8 @@ package lk.ijse.orm.orm_final_project.Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
@@ -11,6 +13,10 @@ public class CoursePageController {
 
     @FXML
     private Button addBtn;
+
+
+    @FXML
+    private AnchorPane ancPageLoader;
 
     @FXML
     private TableColumn<?, ?> colCourseId;
@@ -44,7 +50,7 @@ public class CoursePageController {
 
     @FXML
     void addBtnOnAction(ActionEvent event) {
-
+        manageLoader("/VIew/CourseManage/saveCoursePage.fxml");
     }
 
     @FXML
@@ -55,6 +61,16 @@ public class CoursePageController {
     @FXML
     void updateBtnOnAction(ActionEvent event) {
 
+    }
+
+    public void manageLoader(String path){
+        try{
+            ancPageLoader.getChildren().clear();
+            Parent parent = FXMLLoader.load(getClass().getResource(path));
+            ancPageLoader.getChildren().add(parent);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 }

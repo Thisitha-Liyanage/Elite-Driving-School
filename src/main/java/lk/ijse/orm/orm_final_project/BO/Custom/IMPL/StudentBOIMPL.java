@@ -8,7 +8,9 @@ import lk.ijse.orm.orm_final_project.DAO.DAOTypes;
 import lk.ijse.orm.orm_final_project.DTO.StudentDto;
 import lk.ijse.orm.orm_final_project.Entity.Student;
 import org.modelmapper.ModelMapper;
+import org.modelmapper.TypeToken;
 
+import java.lang.reflect.Type;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.Optional;
@@ -40,7 +42,10 @@ public class StudentBOIMPL implements StudentBO {
 
     @Override
     public List<StudentDto> getAll() throws SQLException {
-        return List.of();
+        ModelMapper modelMapper = new ModelMapper();
+        List<Student> students = studentDAO.getAll();
+        Type listType = new TypeToken<List<StudentDto>>() {}.getType();
+        return modelMapper.map(students, listType);
     }
 
     @Override

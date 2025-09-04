@@ -1,5 +1,6 @@
 package lk.ijse.orm.orm_final_project.BO;
 
+import lk.ijse.orm.orm_final_project.BO.Custom.IMPL.CourseBOIMPL;
 import lk.ijse.orm.orm_final_project.BO.Custom.IMPL.StudentBOIMPL;
 import lk.ijse.orm.orm_final_project.DAO.Custom.IMPL.StudentDAOIMPL;
 import lk.ijse.orm.orm_final_project.DAO.DAOFactory;
@@ -19,7 +20,7 @@ public class BOFactory {
     public <T extends SuperBO> T getBO(BOTypes boTypes) {
         return switch (boTypes) {
             case STUDENT -> (T) new StudentBOIMPL();
-            case COURSE -> null;
+            case COURSE -> (T) new CourseBOIMPL();
             case INSTRUCTOR -> null;
             case ENROLLMENT -> null;
             case COURSE_INSTRUCTOR -> null;

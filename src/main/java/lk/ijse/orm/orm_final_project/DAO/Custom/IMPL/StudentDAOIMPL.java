@@ -116,7 +116,16 @@ public class StudentDAOIMPL implements StudentDAO {
 
     @Override
     public List<Student> getAll() throws SQLException {
-        return List.of();
+        Session session = factoryConfiguration.getSession();
+        try {
+            Query<Student> query = session.createQuery(
+                    "from Student",
+                    Student.class
+            );
+            return query.list();
+        } finally {
+            session.close();
+        }
     }
 
     @Override
