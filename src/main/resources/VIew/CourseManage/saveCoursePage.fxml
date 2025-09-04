@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="saveCourseAnc" prefHeight="550" prefWidth="700" style="-fx-background-color: #2C3E50;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.orm_final_project.Controllers.CourseManage.AddCoursePageControler">
+
+    <VBox layoutX="100" layoutY="40" prefWidth="500" spacing="20">
+
+        <!-- Header -->
+        <Label alignment="CENTER" prefWidth="500" style="-fx-font-size: 24px; -fx-text-fill: #ECF0F1; -fx-font-weight: bold;" text="Save Course" />
+
+        <!-- Course ID -->
+        <HBox spacing="15">
+            <Label prefWidth="150" style="-fx-text-fill: #ECF0F1; -fx-font-size: 14px;" text="Course ID:" />
+            <TextField fx:id="txtCourseId" prefWidth="300" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 8;" />
+        </HBox>
+
+        <!-- Course Name -->
+        <HBox spacing="15">
+            <Label prefWidth="150" style="-fx-text-fill: #ECF0F1; -fx-font-size: 14px;" text="Course Name:" />
+            <TextField fx:id="txtCourseName" prefWidth="300" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 8;" />
+        </HBox>
+
+        <!-- Duration Type + Duration Time -->
+        <HBox spacing="15">
+            <Label prefWidth="150" style="-fx-text-fill: #ECF0F1; -fx-font-size: 14px;" text="Duration:" />
+
+            <!-- Duration Type ComboBox -->
+            <ComboBox fx:id="cmbDurationType" prefWidth="140" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 8;" />
+
+            <!-- Duration Time TextField -->
+            <TextField fx:id="txtDurationTime" prefWidth="140" promptText="Enter time" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 8;" />
+        </HBox>
+
+        <!-- Course Fee -->
+        <HBox spacing="15">
+            <Label prefWidth="150" style="-fx-text-fill: #ECF0F1; -fx-font-size: 14px;" text="Course Fee:" />
+            <TextField fx:id="txtCourseFee" prefWidth="300" style="-fx-background-color: #34495E; -fx-text-fill: white; -fx-background-radius: 8;" />
+        </HBox>
+
+        <!-- Description -->
+        <HBox alignment="TOP_LEFT" spacing="15">
+            <Label prefWidth="150" style="-fx-text-fill: #ECF0F1; -fx-font-size: 14px;" text="Description:" />
+            <TextArea fx:id="txtDescription" prefHeight="80" prefWidth="300" style="-fx-background-color: #34495E; -fx-text-fill: black; -fx-background-radius: 8;" wrapText="true" />
+        </HBox>
+
+        <!-- Buttons -->
+        <HBox alignment="CENTER" spacing="20">
+            <Button fx:id="saveBtn" onAction="#saveBtnOnAction" prefHeight="35" prefWidth="100" style="-fx-background-color: #27AE60; -fx-text-fill: white; -fx-background-radius: 12; -fx-font-size: 14px;" text="Save" />
+            <Button fx:id="resetBtn" onAction="#resetBtnOnAction" prefHeight="35" prefWidth="100" style="-fx-background-color: #C0392B; -fx-text-fill: white; -fx-background-radius: 12; -fx-font-size: 14px;" text="Reset" />
+            <Button fx:id="closeBtn" onAction="#closeBtnOnAction" prefHeight="35" prefWidth="100" style="-fx-background-color: #7F8C8D; -fx-text-fill: white; -fx-background-radius: 12; -fx-font-size: 14px;" text="Close" />
+        </HBox>
+
+    </VBox>
+</AnchorPane>
