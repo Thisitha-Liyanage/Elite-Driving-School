@@ -34,12 +34,5 @@ public class Course {
     @Column(nullable = false)
     private String description;
 
-    @ManyToMany
-    @JoinTable(
-            name = "course_instructor",
-            joinColumns = @JoinColumn(name = "course_id"),
-            inverseJoinColumns = @JoinColumn(name = "instructor_id")
-    )
-    private List<Instructor> instructors;
 
 }

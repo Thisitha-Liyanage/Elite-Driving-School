@@ -31,6 +31,4 @@ public class Instructor {
     @Column(nullable = false)
     private String specification;
 
-    @ManyToMany(mappedBy = "instructors")
-    private List<Course> courses;
 }

@@ -58,7 +58,7 @@ public class DashBoardController implements Initializable {
 
     @FXML
     void PaymentBtnOnAction(ActionEvent event) {
-
+        navigateTo("/VIew/PaymentPage.fxml");
     }
 
     @FXML
@@ -68,17 +68,7 @@ public class DashBoardController implements Initializable {
 
     @FXML
     void courseBtnOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void courseInstructrbtnOnAction(ActionEvent event) {
-
-    }
-
-    @FXML
-    void enrollmentBtnOnAction(ActionEvent event) {
-
+        navigateTo("/VIew/CoursePage.fxml");
     }
 
     @FXML
@@ -88,17 +78,17 @@ public class DashBoardController implements Initializable {
 
     @FXML
     void lessonBtnOnActon(ActionEvent event) {
-
+        navigateTo("/VIew/LessonPage.fxml");
     }
 
     @FXML
     void registrationbtnOnAction(ActionEvent event) {
-
+        navigateTo("/VIew/RegistationPage.fxml");
     }
 
     @FXML
     void studentBtnOnAction(ActionEvent event) {
-
+        navigateTo("/VIew/StudentPage.fxml");
     }
 
     @FXML

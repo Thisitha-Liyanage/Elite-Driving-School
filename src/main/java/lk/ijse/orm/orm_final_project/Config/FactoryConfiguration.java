@@ -30,7 +30,6 @@ public class FactoryConfiguration {
             configuration.addAnnotatedClass(Lesson.class);
             configuration.addAnnotatedClass(Instructor.class);
             configuration.addAnnotatedClass(Payment.class);
-            configuration.addAnnotatedClass(Enrollment.class);
             configuration.addAnnotatedClass(Register.class);
 
             sessionFactory = configuration.buildSessionFactory();

@@ -22,10 +22,13 @@ public class Lesson {
     private String id;
 
     @ManyToOne
-    @JoinColumn(name = "enrollment_id", nullable = false)
-    private Enrollment enrollment;
+    @JoinColumn(name = "student_id", nullable = false)
+    private Student student;
 
-    // Instructor for this lesson
+    @ManyToOne
+    @JoinColumn(name = "course_id", nullable = false)
+    private Course course;
+
     @ManyToOne
     @JoinColumn(name = "instructor_id", nullable = false)
     private Instructor instructor;

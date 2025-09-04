@@ -21,8 +21,8 @@ public class Payment {
     private int id;
 
     @ManyToOne
-    @JoinColumn(name = "enrollment_id")
-    private Enrollment enrollment;
+    @JoinColumn(name = "student_id")
+    private Student student;
 
     @Column(nullable = false)
     private double amountPaid;

@@ -19,9 +19,7 @@
          <Button fx:id="registrationbtn" onAction="#registrationbtnOnAction" prefHeight="40" prefWidth="210" style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-background-radius: 10; -fx-font-size: 14px;" text="Registation" />
             <Button fx:id="instructorBtn" onAction="#instructorBtnOnActon" prefHeight="40" prefWidth="210" style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-background-radius: 10; -fx-font-size: 14px;" text="Instructor" />
             <Button fx:id="courseBtn" onAction="#courseBtnOnAction" prefHeight="40" prefWidth="210" style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-background-radius: 10; -fx-font-size: 14px;" text="Course" />
-         <Button fx:id="courseInstructrbtn" onAction="#courseInstructrbtnOnAction" prefHeight="40" prefWidth="210" style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-background-radius: 10; -fx-font-size: 14px;" text="Course Instructors" />
             <Button fx:id="lessonBtn" onAction="#lessonBtnOnActon" prefHeight="40" prefWidth="210" style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-background-radius: 10; -fx-font-size: 14px;" text="Lesson" />
-         <Button fx:id="enrollmentBtn" onAction="#enrollmentBtnOnAction" prefHeight="40" prefWidth="210" style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-background-radius: 10; -fx-font-size: 14px;" text="Enrollment" />
          <Button fx:id="PaymentBtn" onAction="#PaymentBtnOnAction" prefHeight="40" prefWidth="210" style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-background-radius: 10; -fx-font-size: 14px;" text="Payment" />
          <Button fx:id="usebtn" onAction="#usebtnOnActon" prefHeight="40" prefWidth="210" style="-fx-background-color: #3498DB; -fx-text-fill: white; -fx-background-radius: 10; -fx-font-size: 14px;" text="User" />
         </VBox>

@@ -1,9 +1,6 @@
 package lk.ijse.orm.orm_final_project.Entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
@@ -31,4 +28,5 @@ public class Student {
 
     @Column(name = "contact_No", unique = true , nullable = false)
     private String contactNo;
+
 }
