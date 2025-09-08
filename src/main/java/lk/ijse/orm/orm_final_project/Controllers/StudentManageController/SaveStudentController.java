@@ -52,7 +52,7 @@ public class SaveStudentController implements Initializable {
         }
 
         if(!contact.matches(mobilePattern)){
-            new Alert(Alert.AlertType.ERROR , "Please Enter Valid Phone Number").show();
+            new Alert(Alert.AlertType.ERROR , "Please Enter Vali Phone Number").show();
             return;
         }
 

@@ -16,7 +16,7 @@ public class DAOFactory {
         return switch (daoTypes) {
             case STUDENT -> (T) new StudentDAOIMPL();
             case COURSE -> (T) new CourseDAOIMPL();
-            case INSTRUCTOR -> null;
+            case INSTRUCTOR -> (T) new InstructorDAOIMPL();
             case ENROLLMENT -> null;
             case COURSE_INSTRUCTOR -> null;
             case LESSON -> null;

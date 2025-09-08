@@ -20,5 +20,6 @@ module lk.ijse.orm.orm_final_project {
     opens lk.ijse.orm.orm_final_project.Config to org.hibernate.orm.core, jakarta.persistence;
     opens lk.ijse.orm.orm_final_project.Controllers.StudentManageController to javafx.fxml;
     opens lk.ijse.orm.orm_final_project.Controllers.CourseManage to javafx.fxml;
+    opens lk.ijse.orm.orm_final_project.Controllers.InstructorManageController to javafx.fxml;
     exports lk.ijse.orm.orm_final_project;
 }

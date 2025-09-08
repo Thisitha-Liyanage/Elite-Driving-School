@@ -73,7 +73,7 @@ public class DashBoardController implements Initializable {
 
     @FXML
     void instructorBtnOnActon(ActionEvent event) {
-
+        navigateTo("/VIew/InstructorPage.fxml");
     }
 
     @FXML

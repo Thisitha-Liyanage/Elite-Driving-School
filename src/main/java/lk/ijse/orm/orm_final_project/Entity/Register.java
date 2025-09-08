@@ -22,7 +22,7 @@ public class Register {
 
     private Double amount;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "student_id" , nullable = false)
     private Student student;
 

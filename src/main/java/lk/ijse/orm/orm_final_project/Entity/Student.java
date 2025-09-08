@@ -5,6 +5,7 @@ import lombok.*;
 
 import java.time.LocalDate;
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -28,5 +29,6 @@ public class Student {
 
     @Column(name = "contact_No", unique = true , nullable = false)
     private String contactNo;
+
 
 }

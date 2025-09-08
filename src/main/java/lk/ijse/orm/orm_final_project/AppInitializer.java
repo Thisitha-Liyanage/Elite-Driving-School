@@ -9,9 +9,10 @@ import lk.ijse.orm.orm_final_project.Config.FactoryConfiguration;
 import org.hibernate.Session;
 
 
-public class AppInitializer extends Application {
+public class AppInitializer extends Application{
     public static void main(String[] args) {
         launch(args);
+        FactoryConfiguration.getInstance().getSession();
     }
 
     public void start(Stage stage) throws Exception {
